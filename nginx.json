@@ -1,0 +1,7 @@
+{
+      "tenant": "Consul_SD",
+      "app": "Nginx",
+      "virtualAddress": "10.0.0.200",
+      "defpool": "nginx_pool",
+      "virtualPort": 8080
+}

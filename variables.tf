@@ -34,17 +34,7 @@ variable "password" {
 description = "BIG-IP Password"
 }
 
-variable "tenant" {
-description = "Name of the tenant"
- default = "Consul_SD"
-}
-variable "app" {
-
-description = " Name of the App"
- default = "Nginx"
-}
-
-variable "defpool" {
-description = "Name of the Pool"
- default = "nginx_pool"
+variable "declare" {
+description = "template parameters"
+ default = "nginx.json"
 }
