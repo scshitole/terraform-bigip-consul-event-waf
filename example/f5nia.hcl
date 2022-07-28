@@ -11,12 +11,6 @@ buffer_period {
   max     = "20s"
 }
 
-/*# Consul Block
-consul {
-  address = "https://scs-consul-cluster.consul.95dfd4f6-6078-40ed-9b82-f58d39eb209e.aws.hashicorp.cloud"
-  token = "2e840207-4f76-e889-6124-f9df1c619b8f"
-}*/
-
 # Consul Block
  consul {
   address = "localhost:8500"
@@ -32,7 +26,7 @@ consul {
 }
 
 terraform_provider "bigip" {
-  address  = "54.213.254.29:8443"
+  address  = "1.2.3.4:8443"
   username = "admin"
   password = "CUYfIEcqzV"
 }
@@ -40,7 +34,7 @@ terraform_provider "bigip" {
 task {
   name = "AS3_W5"
   description = "BIG-IP example"
-  source = "../"
+  source = "scshitole/consul-event-waf/bigip"
   providers = ["bigip"]
   services = ["nginx"]
   variable_files = ["terraform.tfvars"]
