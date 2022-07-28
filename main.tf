@@ -1,11 +1,3 @@
-/*
-provider "bigip" {
-  address = var.address
-  username = var.username
-  password = var.password
-  port = var.port
-}*/
-# pin to 1.1.2
 terraform {
   required_providers {
     bigip = {

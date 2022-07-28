@@ -7,7 +7,7 @@
 
 ## How to run the Consul terraform Sync to configure WAF policy and Tenant
 
-- Copy terraform.tfvars.example file
+- Copy terraform.tfvars.example file to terraform.tfvars and provide values
   
 ```
   cp terraform.tfvars.example terraform.tfvars
