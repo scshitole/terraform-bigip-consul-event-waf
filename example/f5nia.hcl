@@ -19,7 +19,7 @@ buffer_period {
     service_name = "CTS Event AS3 WAF"
     default_check {
       enabled = true
-      address = "http://10.0.0.209:8558"
+      address = "http://localhost:8558"
    }
 }
 
