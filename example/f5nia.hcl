@@ -22,6 +22,20 @@ buffer_period {
       address = "http://localhost:8558"
    }
 }
+   token = "2e840207-4f76-e889-6124-f9df1cxxxxx"
+
+}
+
+# Driver block
+driver "terraform-cloud" {
+  hostname     = "https://app.terraform.io"
+  organization = "SCStest"
+  token        = "mxxxxxxxxxxxxxxxRkgEOQoUFZKnMwrGz3TNNxhVMD3zft6sRgGWY7nEKDwwQQQA4QpfhZhJeegr98"
+required_providers {
+    bigip = {
+      source = "F5Networks/bigip"
+    }
+  }
 
 }
 
